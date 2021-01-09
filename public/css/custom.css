@@ -1623,12 +1623,15 @@ margin-bottom: 24px;
     z-index: 1
 }
 
-.modal--vetetIntro .modal-content{
+.modal--vetetIntro .modal-content {
+    background-color: transparent;
+}
+
+.modal--vetetIntro .modal-dialog{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
 }
 
 .vetetIntroPanel__mobile,
