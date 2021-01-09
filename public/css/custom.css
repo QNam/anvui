@@ -1609,6 +1609,7 @@ margin-bottom: 24px;
     bottom: 0px;
     left: 0px;
     padding: 16px;
+    z-index: 1;
 }
 
 .showVetetIntro {
@@ -1619,6 +1620,7 @@ margin-bottom: 24px;
     transform: scale(2);
     cursor: pointer;
     display: none;
+    z-index: 1
 }
 
 .modal--vetetIntro .modal-dialog{
@@ -1627,6 +1629,7 @@ margin-bottom: 24px;
     align-items: center;
 }
 
+.vetetIntroPanel__mobile,
 .vetetIntroPanel {
     cursor: pointer;
     padding: 10px 30px;
@@ -1636,6 +1639,7 @@ margin-bottom: 24px;
     left: 0px;
     display: none;
     border-top-right-radius: 24px;
+    z-index: 1;
 }
 
 .vetetIntroPanel__icon{
@@ -1646,6 +1650,7 @@ margin-bottom: 24px;
     transform: scale(1.5);
 }
 
+.vetetIntroPanel__mobile h3,
 .vetetIntroPanel h3 {
     font-size: 24px;
     font-weight: 500;
