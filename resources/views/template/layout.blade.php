@@ -432,11 +432,11 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
 
     <div class="modal modal--vetetIntro" id="modal--vetetIntro">
         <div class="modal-dialog">
-            {{-- <div class="modal-content"> --}}
+            <div class="modal-content">
                 <a href="http://vetet.vn/" class="d-block text-center">
                     <img src="{{ asset('imgs/vetet_intro.png') }}" alt="">
                 </a>
-            {{-- </div> --}}
+            </div>
         </div>
     </div>
 
