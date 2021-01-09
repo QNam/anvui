@@ -569,8 +569,11 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
 
     (function initVetet(){
         let isViewModalVetet = localStorage.getItem("vetetModalViewed")
-        const isShowVetetIntroRight = localStorage.getItem("showVetetIntroRight")
-        
+        let isShowVetetIntroRight = localStorage.getItem("showVetetIntroRight")
+        if(!isShowVetetIntroRight) {
+            isShowVetetIntroRight = 'show'
+        }
+
         if(!isViewModalVetet && window.screen.width <= 1200) {
             $('#modal--vetetIntro').modal('show');
             localStorage.setItem("vetetModalViewed", true);
