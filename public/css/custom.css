@@ -1637,13 +1637,13 @@ margin-bottom: 24px;
 .vetetIntroPanel__mobile,
 .vetetIntroPanel {
     cursor: pointer;
-    padding: 10px 30px;
-    background-color: #ff4868;
+    /* padding: 10px 30px; */
+    /* background-color: #ff4868; */
     position: fixed;
     bottom: 0px;
     left: 0px;
     display: none;
-    border-top-right-radius: 24px;
+    /* border-top-right-radius: 24px; */
     z-index: 1;
 }
 
