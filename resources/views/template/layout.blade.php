@@ -157,11 +157,11 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
         <div class="pushy-content">
             <ul>
                 <!-- Submenu -->
-                <li class="pushy-link"><a href="{{ route('home.index') }}" title="{{ $HEADER['metaTitle'] }}">Trang chủ</a></li>
-                <li class="pushy-link"><a href="{{ route('intro.index') }}" title="{{ $HEADER['metaTitle'] }}">Giới thiệu</a></li>
-                <li class="pushy-link"><a href="{{ route('page.software') }}" title="{{ $HEADER['metaTitle'] }}">Sản phẩm</a></li>
-                <li class="pushy-link"><a href="{{ route('news.index') }}" title="{{ $HEADER['metaTitle'] }}">Tin tức</a></li>
-                <li class="pushy-link"><a href="{{ route('recruit.index') }}" title="{{ $HEADER['metaTitle'] }}">Tuyển dụng</a></li>
+                <li class="pushy-link"><a href="{{ route('home.index') }}" title="{{ $HEADER['metaTitle'] }}">{{ __('layout.home') }}</a></li>
+                <li class="pushy-link"><a href="{{ route('intro.index') }}" title="{{ $HEADER['metaTitle'] }}">{{ __('layout.aboutUs') }}</a></li>
+                <li class="pushy-link"><a href="{{ route('page.software') }}" title="{{ $HEADER['metaTitle'] }}">{{ __('layout.productNews') }}</a></li>
+                <li class="pushy-link"><a href="{{ route('news.index') }}" title="{{ $HEADER['metaTitle'] }}">{{ __('layout.news') }}</a></li>
+                <li class="pushy-link"><a href="{{ route('recruit.index') }}" title="{{ $HEADER['metaTitle'] }}">{{ __('layout.recruitment') }}</a></li>
             </ul>
         </div>
     </nav>
@@ -181,11 +181,11 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                                 </a></li>
                             </ul>
                             <ul class="avnavbar__right">
-                                <li><a href="{{ route('home.index') }}">Trang chủ</a></li>
-                                <li><a href="{{ route('intro.index') }}">Giới thiệu</a></li>
-                                <li><a href="{{ route('page.software') }}">Sản phẩm</a></li>
-                                <li><a href="{{ route('news.index') }}">Tin tức</a></li>
-                                <li><a href="{{ route('recruit.index') }}">Tuyển dụng</a></li>
+                                <li><a href="{{ route('home.index') }}">{{ __('layout.home') }}</a></li>
+                                <li><a href="{{ route('intro.index') }}">{{ __('layout.aboutUs') }}</a></li>
+                                <li><a href="{{ route('page.software') }}">{{ __('layout.productNews') }}</a></li>
+                                <li><a href="{{ route('news.index') }}">{{ __('layout.news') }}</a></li>
+                                <li><a href="{{ route('recruit.index') }}">{{ __('layout.recruitment') }}</a></li>
                                 <li class="language">
                                     @if( str_replace('_', '-', app()->getLocale()) == 'vi' )
                                     <a href="javascript:;"> <p><span class="avicon icon-vn"></span> Tiếng việt</p> </a>
@@ -193,7 +193,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                                     <a href="javascript:;"> <p><span class="avicon icon-us"></span> English</p> </a>
                                     @endif
                                     <ul class="avnavbar__dropdown">
-                                        <li class="d-none"><a href="{{ route('lang','en') }}" title="{{ $HEADER['metaTitle'] }}"><span class="avicon icon-us"></span> English</a></li>
+                                        <li><a href="{{ route('lang','en') }}" title="{{ $HEADER['metaTitle'] }}"><span class="avicon icon-us"></span> English</a></li>
                                         <li><a href="{{ route('lang','vi') }}" title="{{ $HEADER['metaTitle'] }}"><span class="avicon icon-vn"></span> Tiếng Việt</a></li>
                                     </ul>
                                 </li>
@@ -227,9 +227,9 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col--12-ipad">
                         <div class="banner__content wow slideInLeft" data-wow-duration=".5s">
-                            <h1>Nền tảng số hoá ngành vận tải hành khách đường dài.</h1>
-                            <p>AN VUI là  Doanh nghiệp đầu tiên tại Việt Nam cung cấp nền tảng công nghệ số hoá ngành vận tải hành khách đường dài. Giúp các nhà vận tải hành khách chuyển đổi số, chủ động quản trị khoa học, nâng cao năng lực cạnh tranh từ đó giữ vững thị phần và mở rộng quy mô.</p>
-                            <a href="javascript:;" data-toggle="modal" data-target="#modal--register" class="btn--reg">ĐĂNG KÝ DÙNG THỬ</a>
+                            <h1>{{ __('home.banner.title') }}</h1>
+                            <p>{{ __('home.banner.desc') }}</p>
+                            <a href="javascript:;" data-toggle="modal" data-target="#modal--register" class="btn--reg">{{ __('home.banner.register') }}</a>
                         </div>    
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col--hidden-ipad">
@@ -255,12 +255,12 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                             </div>
                             <div class="navbar--white__right">
                                 <ul>
-                                    <li><a href="{{ route('home.index') }}" title="{{ $HEADER['metaTitle'] }}">Trang chủ</a></li>
-                                    <li><a href="{{ route('intro.index') }}" title="{{ $HEADER['metaTitle'] }}">Giới thiệu</a></li>
-                                    <li><a href="{{ route('page.software') }}" title="{{ $HEADER['metaTitle'] }}">Sản phẩm</a></li>
-                                    <li><a href="{{ route('news.index') }}" title="{{ $HEADER['metaTitle'] }}">Tin tức</a></li>
-                                    <li><a href="{{ route('recruit.index') }}" title="{{ $HEADER['metaTitle'] }}">Tuyển dụng</a></li>
-                                    <li><a class="btn--reg" data-toggle="modal" data-target="#modal--register">ĐĂNG KÝ TƯ VẤN</a></li>
+                                    <li><a href="{{ route('home.index') }}" title="{{ $HEADER['metaTitle'] }}">{{ __('layout.home') }}</a></li>
+                                    <li><a href="{{ route('intro.index') }}" title="{{ $HEADER['metaTitle'] }}">{{ __('layout.aboutUs') }}</a></li>
+                                    <li><a href="{{ route('page.software') }}" title="{{ $HEADER['metaTitle'] }}">{{ __('layout.productNews') }}</a></li>
+                                    <li><a href="{{ route('news.index') }}" title="{{ $HEADER['metaTitle'] }}">{{ __('layout.news') }}</a></li>
+                                    <li><a href="{{ route('recruit.index') }}" title="{{ $HEADER['metaTitle'] }}">{{ __('layout.recruitment') }}</a></li>
+                                    <li><a class="btn--reg" data-toggle="modal" data-target="#modal--register">{{ __('layout.register') }}</a></li>
                                 </ul>
                             </div>
                         </div> 
@@ -301,24 +301,24 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                             </a>
                         </div>
                         <div class="footer__company__intro">
-                            <h3>CÔNG TY CỔ PHẦN CÔNG NGHỆ ANVUI</h3>
-                            <p>Giấy chứng nhận ĐKKD số 0107003437 do Sở KH& ĐT TP. Hà Nội cấp lần đầu ngày 23/09/2015.</p>
+                            <h3>{{ __('layout.companyName') }}</h3>
+                            <p>{{ __('layout.businessCer') }}</p>
                         </div>
 
                         <div class="footer__company__address">
-                            <p><span>Chi nhánh phía Bắc</span> - Email: info@anvui.vn - Điện thoại: 1900 1911 Ext 1 </p>
-                            <p>Địa chỉ: Toà Ecolife Capital, Số  58 Tố Hữu, Nam Từ Liêm, Hà Nội</p>
+                            <p><span>{{ __('layout.nOfficeLabel') }}</span> - Email: info@anvui.vn - hotline: 1900 1911 Ext 1 </p>
+                            <p>{{ __('layout.address') }}: {{ __('layout.nOfficeContent') }}</p>
                         </div>
                         
                         <div class="footer__company__address">
-                            <p><span>Chi nhánh Phía Nam</span> - Email: anvuihcm@anvui.vn - Điện thoại : 1900 1911 Ext 2</p>
-                            <p>Địa chỉ: J65 Lầu 6, Toà nhà Sinh Lợi Plaza, KĐT Trung Sơn, Bình Chánh, Hồ Chí Minh</p>
+                            <p><span>{{ __('layout.sOfficeLabel') }}</span> - Email: anvuihcm@anvui.vn - hotline : 1900 1911 Ext 2</p>
+                            <p>{{ __('layout.address') }}: {{ __('layout.sOfficeContent') }}</p>
                             {{-- <p>Hotline: 038 776 4444</p>  --}}
                             <p>Hotline: 024.9999.6666</p>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  col--12-ipad">
-                        <h3 class="mb-3" style="color: #084388">Bản đồ</h3>
+                        <h3 class="mb-3" style="color: #084388"> {{ __('layout.map') }}</h3>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.977243673456!2d105.78417591542703!3d20.99354929435416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acb433453903%3A0x89bf648fedc58921!2zNTggVOG7kSBI4buvdSwgVHJ1bmcgVsSDbiwgTmFtIFThu6sgTGnDqm0sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1603873894117!5m2!1svi!2s" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         <!-- <div class="footer__menu">
                             <a href="" title="{{ $HEADER['metaTitle'] }}">Chính sách bảo mật</a>
@@ -340,7 +340,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
         </div>
         <div class="footer__mid">
             <div class="container">
-                <h3 class="partner__head">Đối tác</h3>
+                <h3 class="partner__head"> {{ __('layout.partners') }}</h3>
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col--12-ipad">
                         <div class="partner">
@@ -440,13 +440,23 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
                         <div class="modal--register__img">
                             <img src="{{ asset('imgs/img-reg.png') }}" title="{{ $HEADER['metaTitle'] }}" alt="{{ $HEADER['metaTitle'] }}">
+                            @if( str_replace('_', '-', app()->getLocale()) == 'vi' )
                             <div class="modal--register__content">
                                 <p>Nền tảng quản lý</p>
                                 <h1>Tối ưu</h1>
                                 <p>Và</p>
                                 <h1>Thuận tiện</h1>
-                                <p>cho mọi</p>
+                                <p>cho mọi nhà xe</p>
                             </div>
+                            @else 
+                            <div class="modal--register__content">
+                                <h1 style="font-size: 30px;">THE ULTIMATE</h1>
+                                <p>AND</p>
+                                <h1 style="font-size: 30px;">CONVENIENT</h1>
+                                <p style="font-size: 18px;">MANAGEMENT FOUNDATION</p>
+                                <p style="font-size: 18px;">FOR ALL BUS OPERATORS</p>
+                            </div>
+                            @endif
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
@@ -454,12 +464,12 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                             <form action="{{ route('register_use.store') }}" method="POST" id="js-form--register">
                                 @csrf
                                 <h3 class="modal--register__form__header">
-                                    Đăng ký tư vấn
+                                    {{ __('layout.register') }}
                                 </h3>
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                            <label for="">Họ tên người liên hệ </label>
+                                            <label for="">{{ __('layout.reg.fullName') }} </label>
                                         </div>
                                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                                             <input type="text" name="user_name" required class="form-control">
@@ -469,7 +479,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                            <label for="">Tên nhà xe </label>
+                                            <label for="">{{ __('layout.reg.company') }} </label>
                                         </div>
                                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                                             <input type="text" name="company_name" required class="form-control">
@@ -479,7 +489,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                            <label for="">Số điện thoại </label>
+                                            <label for="">{{ __('layout.reg.phone') }} </label>
                                         </div>
                                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                                             <input type="number" name="phone" required class="form-control">
@@ -489,7 +499,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                            <label for="">Địa chỉ </label>
+                                            <label for="">{{ __('layout.reg.address') }} </label>
                                         </div>
                                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                                             <input type="text" name="address" class="form-control">
@@ -520,7 +530,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
                                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                                            <button class="btn--reg" type="submit">ĐĂNG KÝ </button>
+                                            <button class="btn--reg" type="submit">{{ __('layout.reg.regLabel') }} </button>
                                         </div>
                                     </div>
                                 </div>
@@ -798,19 +808,19 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
 
             messages: {
                 user_name: {
-                    required: "Tên người liên hệ không được để trống !",
-                    maxlength: "Tên người liên hệ tối đa 150 kí tự !",
+                    required: "{{ __('layout.validate.user_name.rq') }}",
+                    maxlength: "{{ __('layout.validate.user_name.maxLength') }}",
                 },
                 company_name:  {
-                    required: "Tên công ty không được để trống !",
-                    maxlength: "Tên công ty tối đa 150 kí tự !",
+                    required: "{{ __('layout.validate.company_name.rq') }}",
+                    maxlength: "{{ __('layout.validate.company_name.maxlength') }}",
                 },
                 phone: {
-                    required: "Số điện thoại không được để trống !",
-                    number: "Số điện thoại không đúng định dạng!",
+                    required: "{{ __('layout.validate.phone.rq') }}",
+                    number: "{{ __('layout.validate.phone.number') }}",
                 },
                 address: {
-                    maxlength: "Địa chỉ tối đa 255 kí tự !",
+                    maxlength: "{{ __('validate.address.maxlength') }}",
                 }
             },
             submitHandler: function(form) {

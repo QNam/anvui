@@ -2,12 +2,12 @@
 
 @section('content')
 <section class="introPage">
-    <h2>Xin chào, chúng tôi là An Vui <b>!</b></h2>
+    <h2>{{ __('about.greeting') }}<b>!</b></h2>
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-6">
                 <p>
-                    AN VUI là Startup công nghệ tiên phong phục vụ cho lĩnh vực vận tải. Với sứ mệnh số hoá ngành vận tải hành khách, giúp giữ vững thị phần, nâng cao năng lực cạnh tranh, giúp các nhà vận tải truyền thống chuyển dịch sang vận tải công nghệ, mang đến những hành trình đi an về vui cho Cộng đồng.  Hiện tại AN VUI đang có mặt tại Thị trường Việt Nam và hướng đến thị trường Đông Nam Á và Châu Á.
+                    {{ __('about.para1') }}
                 </p>
             </div>
             <div class="col-xs-12 col-md-6">
@@ -17,7 +17,7 @@
 
         <div class="row" style="margin-top: 40px">
             <div class="col-12">
-                <p>Được thành lập từ năm 2015 và chính thức công bố sản phẩm nền tảng công nghệ tháng 7 năm 2017. Đến nay AN VUI đã phục vụ hàng trăm doanh nghiệp vận tải quy mô lớn trong cả nước Ứng dụng phần mềm của AN VUI vào quản lý và công cuộc chuyển đổi số cho doanh nghiệp.  AN VUI đã trở thành cầu nối cho các doanh nghiệp vận tải đưa nguồn công suất dư thừa của mình lên các sàn giao dịch vận tải nhằm tăng doanh thu và giảm chi phí vận hành. Mọi hoạt động của doanh nghiệp vận tải đều được tự động và xử lý khoa học trên nền tảng công nghệ mà AN VUI cung cấp.</p>
+                <p>{{ __('about.para2') }}</p>
             </div>
         </div>
         <div class="row" style="margin-top: 40px">
@@ -40,31 +40,31 @@
         </div>
         <div class="row" style="margin-top: 40px">
             <div class="col-12">
-                <p>AN VUI lọt TOP 17 Startup tiêu biểu của Việt Nam do báo VnExpress tổ chức năm 2016. Sau đó, AN VUI tiếp tục là doanh nghiệp công nghệ vinh dự đã vượt qua 289 dự án lọt vào TOP 10 của Nhân Tài Đất Việt 2017. Là startup duy nhất của Việt Nam vượt qua cuộc thi Seedstars Competition tiến thẳng vào vòng Chung kết Châu Á, AN VUI đã xuất sắc được chọn trở thành 1 trong các đại diện Châu Á tham dự Seedstars World Competition, được tổ chức tại Lausanne, Switzerland.</p>
+                <p>{{ __('about.para3') }}</p>
             </div>
         </div>
         <div class="row" style="margin-top: 40px">
             <div class="col-12">
                 <div class="custommerReview">
-                    <h2>Khách hàng nói gì về An Vui <b>?</b></h2>
+                    <h2>{{ __('about.reviewLabel') }} <b>?</b></h2>
                     <div id="js_custommerReview" class="custommerReview__carousel owl-carousel owl-theme">
                         <div class="item custommerReview__item">
                             <img src="{{ asset('imgs/review2.png') }}" alt="">
-                            <h3>Ông Nguyễn Mạnh Hà</h3>
-                            <h4>Chủ tịch của Công ty Vận tải và du lịch Hà Lan đơn vị vận tải quy mô lớn nhất tại Tại Thái Nguyên</h4>
-                            <h5><i> "Khi ứng dụng AN VUI  vào hoạt động quản lý và vận hành Hoạt động của Hà Lan trở nên minh bạch và thuận tiện. Đặc biệt việc ứng dụng hợp đồng điện tử do AN VUI cung cấp cho mảng xe hợp đồng của Hà lan đã mang lại sự thuận tiện giảm chi phí in ấn, lưu trữ và vận hành đáng kể cho Hà Lan."</i></h5>
+                            <h3>{{ __('home.customers.halan.name') }}</h3>
+                            <h4>{{ __('home.customers.halan.pos') }}</h4>
+                            <h5><i> "{{ __('home.customers.halan.content') }}"</i></h5>
                         </div>
                         <div class="item custommerReview__item">
                             <img src="{{ asset('imgs/review1.png') }}" alt="">
-                            <h3>Ông Nguyễn Thanh Tùng</h3>
-                            <h4>Chủ tịch INTERBUS LINES</h4>
-                            <h5><i> "Từ khi ứng dụng AN VUI vào quản lý và điều hành Interbus lines Doanh thu của Interbuslines tăng hơn 200% sau 2 năm ứng dụng. Đồng thời Inter buslines giờ có thể chủ động mở các đại lý phân phối vé tới hành khách giảm đi 1/2 số lượng lao động."</i></h5>
+                            <h3>{{ __('home.customers.inter.name') }}</h3>
+                            <h4>{{ __('home.customers.inter.pos') }}</h4>
+                            <h5><i> "{{ __('home.customers.inter.content') }}"</i></h5>
                         </div>
                         <div class="item custommerReview__item">
                             <img src="{{ asset('imgs/review3.png') }}" alt="">
-                            <h3>Ông Nguyễn Thượng Hải</h3>
-                            <h4>Giám đốc Công ty Vận tải Hà Hải Thái Bình</h4>
-                            <h5><i> "Chúng tôi đã sử dụng nhiều phần mềm của những đơn vị khác nhau nhưng cuối cùng lựa chọn AN VUI bởi AN VUI giúp chúng tôi tích hợp từ Tổng đài tự động, website đặt vé và hoạt động bán vé tại phòng vé tất cả trong 1 hệ thống duy nhất tiện dùng và không bị phức tạp liên hệ với nhiều bên."</i></h5>
+                            <h3>{{ __('home.customers.hahai.name') }}</h3>
+                            <h4>{{ __('home.customers.hahai.pos') }}</h4>
+                            <h5><i> "{{ __('home.customers.hahai.content') }}"</i></h5>
                         </div>
                     </div>
                 </div>
@@ -73,13 +73,13 @@
 
         <div class="row" style="margin-top: 40px">
             <div class="col-12">
-                <p>Năm 2019 AN VUI lần đầu tiên nhận vốn đầu tư từ quỹ VinaCapital Ventures.  AN VUI đã có những bước tiến mạnh mẽ trở thành đơn vị số 1 tại Việt Nam cung cấp nền tảng công nghệ tổng thể cho doanh nghiệp vận tải. Hiện nay AN VUI tiếp tục đang gọi những vòng vốn tiếp theo để mở rộng quy mô  và hoàn chỉnh hệ sinh thái tổng thể cho ngành vận tải để mở rộng thị trường sang các nước Đông Nam Á.</p>
+                <p>{{ __('about.para4') }}</p>
             </div>
         </div>
         <div class="row" style="margin-top: 80px">
             <div class="col-12">
                 <div class="supporter">
-                    <h2>Quỹ đầu tư vào AN VUI</h2>
+                    <h2>{{ __('about.investLabel') }}</h2>
                     <div id="js_supporter" class="supporter__carousel owl-carousel owl-theme">
                         <div class="item supporter__item">
                             <img src="{{ asset('imgs/supporter.svg') }}" alt="">

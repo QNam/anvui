@@ -1,0 +1,50 @@
+<?php
+
+return [
+    'banner.title' => 'Digitize long-distance transportation industry',
+    'banner.desc' => 'AN VUI is proud to be the pioneer in providing SaaS to bus operators in Vietnam. Our mission is to empower bus operators through digital transformation, helping them to optimize operations and management, create competitive advantages and scale at ease.',
+    'banner.register' => 'FREE TRIAL',
+    
+    'benefit.header1' => "Comprehensive",
+    'benefit.header2' => "Management Ecosystem",
+    'benefit.header3' => "for bus operators",
+    'benefit.header' => '',
+    'benefit.title1' => 'Optimize operation cost',
+    'benefit.desc1' => 'AN VUI helps bus operators to manage their business efficiently, optimize resources and reduce operating costs from 3-5%',
+    'benefit.title2' => 'Boost ticket growth',
+    'benefit.desc2' => 'AN VUI provides bus operators with multiple channels to sell tickets, as well as tool to create discount or campaign to enhance your ticket growth from 10-20%',
+    'benefit.title3' => 'Reduce workload & Efficient management',
+    'benefit.desc3' => 'AN VUI equips bus operators with a comprehensive solution that cover all aspect of operations, making running your business easier than ever before',
+
+    'why.header' => 'Why An Vui',
+    'why.desc1' => 'The Fourth Industrial Revolution (Industry 4.0) is having a profound impact on each nation, industry, sector, business and people. Transportation sector is nowhere outside of this influence.',
+    'why.desc2' => 'Nowadays, fast businesses win slow businesses, not big businesses win small businesses as we see in the past . If you lack money, you can borrow some, or if you lack a car, you can rent one. But if you lack passengers, you lack everything. Passengers can only come to you if you are providing good quality services, at a competitive price, and your brands are well spread. AN VUI, with our product, can help you achieve all of that.',
+    'why.register' => 'REGISTER TO GET HELP',
+
+    'ecosys.header' => 'AN VUI Ecosystem',
+    'ecosys.title1' => 'Application for Ticket Agents',
+    'ecosys.desc1' => 'Helping bus operators to expand their network of ticket agent and differentiate level of commissions',
+    'ecosys.title2' => 'Customized Website',
+    'ecosys.desc2' => 'Providing bus operators with a professional and customized website to do branding and sell tickets',
+    'ecosys.title3' => 'Customized Mobile Application',
+    'ecosys.desc3' => 'Providing bus operators with a mobile application for passengers to book ticket and pay on-the-go',
+    'ecosys.title4' => 'Application for Drivers',
+    'ecosys.desc4' => 'Equip drivers with tool to update schedule, passenger information and communicate at ease',
+    'ecosys.title5' => 'Application for Ticket Selling',
+    'ecosys.desc5' => 'Sell and issue tickets to passengers, connect to telephone exchange to display name, age, address and booking history for better customer care.',
+    'ecosys.title6' => 'Real-time Reporting System',
+    'ecosys.desc6' => 'Conserve your time and money. Automatically calculate and construct reports on revenue, expenses and business performance.',
+
+    'customers.header1' => 'Our Customers',
+
+    'customers.header' => 'What do customers say about An Vui',
+    'customers.inter.name' => 'Mr. Nguyen Thanh Tung ',
+    'customers.inter.pos' => 'Chairman of INTERBUS LINES',
+    'customers.inter.content' => 'Thanks to the application of An Vui’s technology into operation management, INTERBUS LINES has experienced revenue growth by more than 200% after 2 years.  At the same time, we can now actively open ticket distribution agents, cutting down a half of abundant human resources.',
+    'customers.halan.name' => 'Mr. Do Manh Ha',
+    'customers.halan.pos' => 'Chairman of HA LAN Transport and Tourism Company, the largest bus operator in Thai Nguyen',
+    'customers.halan.content' => "With the help of An Vui’s technology, HA LAN's operation management becomes transparent and efficient. More specifically, An Vui's e-contract has brought about higher efficiency to Ha Lan by reducing our printing, storage and operating costs.",
+    'customers.hahai.name' => 'Mr. Nguyen Thuong Hai ',
+    'customers.hahai.pos' => 'CEO of Ha Hai Transportation Company in Thai Binh',
+    'customers.hahai.content' => "Despite having used several softwares of different companies previously, in the end we chose An Vui because An Vui's technology allows us to integrate Automatic Hotline, Ticket Booking Platform and Ticking Selling at box office into one centralized system. This integration is highly convenient in managing operations and does not require the involvement of multiple parties.",
+];
