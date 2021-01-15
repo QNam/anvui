@@ -92,13 +92,23 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
     <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=1.0.4">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}?v={{ time() }}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169847335-1"></script>
+    {{-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169847335-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
     gtag('config', 'UA-169847335-1');
+    </script> --}}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187414431-1">
+    </script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-187414431-1');
     </script>
     <style>
         figure.image.image_resized {
