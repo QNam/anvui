@@ -9,7 +9,7 @@ class PageController extends Controller
     //
     public function pageSofwareIntro() {
         $header = [
-            'meta_title' => "Phần mềm nhà xe An Vui",
+            'meta_title' => "Giải pháp quản lý & vận hành tổng thể cho nhà xe - AN VUI",
         ];
 
         $this->setHeader($header);

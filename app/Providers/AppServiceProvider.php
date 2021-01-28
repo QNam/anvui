@@ -31,9 +31,9 @@ class AppServiceProvider extends ServiceProvider
         }
         
         $headerDefault = [
-            'metaTitle' => 'ANVUI.VN - Startup công nghệ số hóa ngành vận tải hành khách',
-            'metaDesc' => 'AN VUI là đơn vị Công nghệ đầu tiên tại Việt Nam xây dựng hệ thống phần mềm tổng thể cho ngành vận tải hành khách. Nhằm giúp các nhà vận tải chủ động trong quản lý, nâng cao năng lực cạnh tranh từ đó giữ vững thị phần và mở rộng quy mô.',
-            'metaKeyword' => 'vận tải,phần mềm,phần mềm nhà xe',
+            'metaTitle' => 'Startup Công nghệ với sứ mệnh Số hoá ngành vận tải hành khách thông qua việc cung cấp Phần mềm xe khách | ANVUI.VN',
+            'metaDesc' => 'Đơn vị đầu tiên cung cấp Phần mềm xe khách quản lý tổng thể cho ngành vận tải, giúp Nhà xe tăng doanh thu, bảo vệ thương hiệu nâng cao năng lực cạnh tranh.',
+            'metaKeyword' => 'vận tải,phần mềm,Phần mềm xe khách,phần mềm nhà xe,phần mềm vận tải hành khách,phần mềm hàng hoá',
             'img' => asset('imgs/img-home2.png')
         ];
         Config::set('HEADER', $headerDefault);

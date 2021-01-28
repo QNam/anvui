@@ -23,7 +23,7 @@ class RecruitController extends Controller
         $recruitModel = new RecruitModel();
 
         $header = [
-            'meta_title' => 'Tuyển dụng',
+            'meta_title' => 'Chiêu mộ nhân sự cho Startup Công Nghệ với Sứ mệnh Số hoá ngành vận tải hành khách | AN VUI',
         ];
 
         // $this->setFilter($request->only(['title', 'pagination', 'id_view']));
