@@ -216,7 +216,8 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                         <div class="avnavbar">
                             <ul class="avnavbar__left">
                                 <li class="avnavbar__logo"><a href="{{ route('home.index') }}" title="{{ $HEADER['metaTitle'] }}">
-                                    <div class="icon-logo_w"></div>    
+                                    {{-- <div class="icon-logo_w"></div>     --}}
+                                    <img src="{{ asset('imgs/logo_b.png') }}" alt="{{ $HEADER['metaTitle'] }}">
                                 </a></li>
                             </ul>
                             <ul class="avnavbar__right">
@@ -248,7 +249,8 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                     <ul class="avnavbar--mobile__left">
                         <li>
                             <a href="{{ route('home.index') }}" title="{{ $HEADER['metaTitle'] }}" class="avnavbar--mobile__logo">                                    
-                                <div class="icon-logo_w"></div>    
+                                {{-- <div class="icon-logo_w"></div>     --}}
+                                <img src="{{ asset('imgs/logo_b.png') }}" alt="{{ $HEADER['metaTitle'] }}">
                             </a>
                         </li>
                     </ul>
