@@ -291,7 +291,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                         <div class="navbar--white__wrap">
                             <div class="navbar--white__left">
                                 <a href="{{ route('home.index') }}" title="{{ $HEADER['metaTitle'] }}" class="navbar--white__logo">
-                                    <img src="{{ asset('imgs/logo_b.png') }}" title="{{ $HEADER['metaTitle'] }}" alt="{{ $HEADER['metaTitle'] }}">
+                                    <img src="{{ asset('imgs/logo_bo.png') }}" title="{{ $HEADER['metaTitle'] }}" alt="{{ $HEADER['metaTitle'] }}">
                                 </a>
                             </div>
                             <div class="navbar--white__right">
