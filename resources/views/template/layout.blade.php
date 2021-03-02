@@ -126,35 +126,8 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
             max-width: 100%;
         }
     </style>
+    <script type="application/ld + json">{"@context ":"https://schema.org","@type":"ProfessionalService","name":"Startup Công nghệ với sứ mệnh Số hoá ngành vận tải hành khách thông qua việc cung cấp Phần mềm xe khách | ANVUI.VN","image":{"@type":"ImageObject","url":"https://anvui.vn/imgs/img-home2.png","width":526,"height":474},"telephone":"19001911","url":"https://anvui.vn/","address":{"@type":"PostalAddress","streetAddress":"Toà Ecolife Capital, Số 58 Tố Hữu","addressLocality":"Nam Từ Liêm","postalCode":"700000","addressRegion":"Ha Noi","addressCountry":"VN"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"671"},"priceRange":"Dùng thử miễn phí","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"22:00"}]}</script>
     @yield("qna")
-    <script type="application/ld + json"> {
-        "@context ":"https://schema.org",
-        "@type":"ProfessionalService",
-        "name":"Startup Công nghệ với sứ mệnh Số hoá ngành vận tải hành khách thông qua việc cung cấp Phần mềm xe khách | ANVUI.VN",
-        "image":{
-            "@type": "ImageObject",
-            "url": "http://localhost/anvui/public/imgs/img-home2.png",
-            "width": 526,
-            "height": 474
-        },
-        "telephone":"19001911",
-        "url":"https://anvui.vn/",
-        "address":{
-            "@type":"PostalAddress",
-            "streetAddress":"Toà Ecolife Capital, Số 58 Tố Hữu",
-            "addressLocality":"Nam Từ Liêm",
-            "postalCode":"700000",
-            "addressRegion":"Ha Noi",
-            "addressCountry":"VN"
-        },
-        "aggregateRating":{
-            "@type":"AggregateRating",
-            "ratingValue":"4.9",
-            "reviewCount":"671"
-        },
-        "priceRange":"Dùng thử miễn phí",
-        "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"22:00"}]
-    }</script>
 </head>
 <body>
     <!-- Load Facebook SDK for JavaScript -->
