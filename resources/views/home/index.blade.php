@@ -1,45 +1,6 @@
 @extends('template.layout')
 @section('qna')
-<script type = "application/ld+json" > {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-        "@type": "Question",
-        "name": "AN VUI hỗ trợ bảo vệ Thương hiệu của Hãng xe thế nào?",
-        "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Đây là tiêu chí đầu tiên của AN VUI mong muốn mang đến cho Khách hàng. Chúng tôi cung cấp từ Website,App đều mang <b>thương hiệu riêng</b> của Hãng xe. Các tin nhắn, Email và tổng đài gọi điện cho hành khách đều mang thương hiệu riêng của Hãng xe. Giúp cho Hãng xe của bạn luôn chiếm vị trí cao trên công cụ tìm kiếm và không bị các đối thủ lợi dụng thương hiệu của bạn. AN VUI tuyệt đối không sử dụng thương hiệu của Nhà Xe để tìm cách bán vé thu hoa hồng đồng thời AN VUI còn  tư vấn giúp Nhà xe phương án xây dựng và phát triển thương hiệu riêng của mình."
-        }
-    }, {
-        "@type": "Question",
-        "name": "AN VUI giúp nhà xe tăng doanh số bán vé bằng cách nào?",
-        "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "AN VUI không bán vé nhằm đảm bảo tính khách quan và giữ an toàn cho Hãng xe đã tin dùng AN VUI. Hành khách có thể mua vé online trực tiếp từ website của Hãng đồng thời kết nối Hãng xe với hơn : 1,500 Đại lý bán vé online lớn như Bank App, và các siêu App hiện nay trên thị trường… Sẽ giúp hãng xe tăng doanh thu cả online lẫn offline."
-        }
-    }, {
-        "@type": "Question",
-        "name": "Thông tin của Nhà xe được AN VUI bảo mật như thế nào?",
-        "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ngoài việc cam kết bảo mật thông tin của hãng xe mà AN VUI đã ký kết, AN VUI còn bàn giao tài khoản quản trị độc lập giúp Nhà xe chủ động mọi thao tác trên phần mềm như : Thêm xe, thêm tuyến, Thêm người dùng và chủ động phân quyền đến từng đối tượng.  Dữ liệu được AN VUI backup thường xuyên để đảm bảo hệ thống vận hành ổn định và an toàn."
-        }
-    }, {
-        "@type": "Question",
-        "name": "Làm thế nào để có thể sử dụng được sản phẩm dịch vụ của AN VUI?",
-        "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "AN VUI có mặt tại Singapore và tại Việt Nam chúng tôi có mặt tại cả 2 miền Nam, Bắc, đội ngũ tư vấn và triển khai sẽ đến trực tiếp gặp khách hàng để trao đổi và tư vấn những gói phù hợp. Ngoài ra AN VUI có tổng đài tiếp nhận yêu cầu của khách hàng : 024.9999.6666 luôn sẵn sàng để tư vấn cho bạn. Khách hàng khi có nhu cầu sử dụng sản phẩm và dịch vụ của AN VUI có thể đăng ký tư vấn online <a href="https://anvui.vn/#register"><b>tại đây</b><a>"
-        }
-    }, {
-        "@type": "Question",
-        "name": "Tôi cần biết thêm thông tin về AN VUI thì có những kênh nào để tham khảo?",
-        "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Là đơn vị Startup Công Nghệ đầu tiên tại Việt Nam cung cấp giải pháp quản trị tổng thể cho doanh nghiệp Vận tải và đã nhận được hàng loạt giải thưởng như: Startup Việt, Nhân Tài Đất Việt, Sao Khuê… AN VUI cũng là Startup đã nhận được vốn đầu tư của các quỹ danh tiếng như : Vinacapital ventures, Hustle .. Nhưng trước khi lựa chọn AN VUI là đơn vị cung cấp giải pháp Chúng tôi khuyến khích khách hàng tìm hiểu kỹ thông tin về chúng tôi qua hệ thống Báo Chí, Truyền hình hoặc chính những khách hàng đang sử dụng sản phẩm và dịch vụ của AN VUI…  Kênh Youtube của AN VUI: <a href="https://www.youtube.com/channel/UCwH8pqcfHz3tll8JD0UYpwQ">tại đây</a>"
-        }
-    }]
-} </script>
+<script type="application/ld + json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"AN VUI hỗ trợ bảo vệ Thương hiệu của Hãng xe thế nào?","acceptedAnswer":{"@type":"Answer","text":"Đây là tiêu chí đầu tiên của AN VUI mong muốn mang đến cho Khách hàng. Chúng tôi cung cấp từ Website,App đều mang <b>thương hiệu riêng</b> của Hãng xe. Các tin nhắn, Email và tổng đài gọi điện cho hành khách đều mang thương hiệu riêng của Hãng xe. Giúp cho Hãng xe của bạn luôn chiếm vị trí cao trên công cụ tìm kiếm và không bị các đối thủ lợi dụng thương hiệu của bạn. AN VUI tuyệt đối không sử dụng thương hiệu của Nhà Xe để tìm cách bán vé thu hoa hồng đồng thời AN VUI còn  tư vấn giúp Nhà xe phương án xây dựng và phát triển thương hiệu riêng của mình."}},{"@type":"Question","name":"AN VUI giúp nhà xe tăng doanh số bán vé bằng cách nào?","acceptedAnswer":{"@type":"Answer","text":"AN VUI không bán vé nhằm đảm bảo tính khách quan và giữ an toàn cho Hãng xe đã tin dùng AN VUI. Hành khách có thể mua vé online trực tiếp từ website của Hãng đồng thời kết nối Hãng xe với hơn : 1,500 Đại lý bán vé online lớn như Bank App, và các siêu App hiện nay trên thị trường… Sẽ giúp hãng xe tăng doanh thu cả online lẫn offline."}},{"@type":"Question","name":"Thông tin của Nhà xe được AN VUI bảo mật như thế nào?","acceptedAnswer":{"@type":"Answer","text":"Ngoài việc cam kết bảo mật thông tin của hãng xe mà AN VUI đã ký kết, AN VUI còn bàn giao tài khoản quản trị độc lập giúp Nhà xe chủ động mọi thao tác trên phần mềm như : Thêm xe, thêm tuyến, Thêm người dùng và chủ động phân quyền đến từng đối tượng.  Dữ liệu được AN VUI backup thường xuyên để đảm bảo hệ thống vận hành ổn định và an toàn."}},{"@type":"Question","name":"Làm thế nào để có thể sử dụng được sản phẩm dịch vụ của AN VUI?","acceptedAnswer":{"@type":"Answer","text":"AN VUI có mặt tại Singapore và tại Việt Nam chúng tôi có mặt tại cả 2 miền Nam, Bắc, đội ngũ tư vấn và triển khai sẽ đến trực tiếp gặp khách hàng để trao đổi và tư vấn những gói phù hợp. Ngoài ra AN VUI có tổng đài tiếp nhận yêu cầu của khách hàng : 024.9999.6666 luôn sẵn sàng để tư vấn cho bạn. Khách hàng khi có nhu cầu sử dụng sản phẩm và dịch vụ của AN VUI có thể đăng ký tư vấn online <a href='https://anvui.vn/#register'><b>tại đây</b><a>"}},{"@type":"Question","name":"Tôi cần biết thêm thông tin về AN VUI thì có những kênh nào để tham khảo?","acceptedAnswer":{"@type":"Answer","text":"Là đơn vị Startup Công Nghệ đầu tiên tại Việt Nam cung cấp giải pháp quản trị tổng thể cho doanh nghiệp Vận tải và đã nhận được hàng loạt giải thưởng như: Startup Việt, Nhân Tài Đất Việt, Sao Khuê… AN VUI cũng là Startup đã nhận được vốn đầu tư của các quỹ danh tiếng như : Vinacapital ventures, Hustle .. Nhưng trước khi lựa chọn AN VUI là đơn vị cung cấp giải pháp Chúng tôi khuyến khích khách hàng tìm hiểu kỹ thông tin về chúng tôi qua hệ thống Báo Chí, Truyền hình hoặc chính những khách hàng đang sử dụng sản phẩm và dịch vụ của AN VUI…  Kênh Youtube của AN VUI: <a href='https://www.youtube.com/channel/UCwH8pqcfHz3tll8JD0UYpwQ'>tại đây</a>"}}]}</script>
 @endsection
 @section('content')
 
