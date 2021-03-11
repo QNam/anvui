@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'banner.title' => 'Nền tảng số hoá ngành vận tải hành khách đường dài.',
-    'banner.desc' => 'AN VUI là Doanh nghiệp đầu tiên tại Việt Nam cung cấp nền tảng công nghệ số hoá ngành vận tải hành khách đường dài. Giúp các nhà vận tải hành khách chuyển đổi số, chủ động quản trị khoa học, nâng cao năng lực cạnh tranh từ đó giữ vững thị phần và mở rộng quy mô.',
-    'banner.register' => 'ĐĂNG KÝ DÙNG THỬ', 
+    'banner.title' => 'Nền tảng chuyển đổi số ngành vận tải hành khách',
+    'banner.desc' => 'Cung cấp nền tảng công nghệ số hoá ngành vận tải hành khách đường dài. Giúp các nhà vận tải hành khách chuyển đổi số, chủ động quản trị khoa học, nâng cao năng lực cạnh tranh từ đó giữ vững thị phần và mở rộng quy mô.',
+    'banner.register' => 'Dùng thử', 
 
     'benefit.header1' => "Hệ sinh thái",
     'benefit.header2' => "quản trị toàn diện",
-    'benefit.header3' => "dành cho nhà xe",
+    'benefit.header3' => "cho nhà xe",
     'benefit.title1' => "Tiết kiệm 3% - 5% Chi phí vận hành",
     'benefit.desc1' => 'Phần mềm quản lý nhà xe giúp khách hàng quản lý dễ dàng doanh nghiệp của mình, tối ưu nguồn nhân lực, giảm thiểu chi phí vận hành',
     'benefit.title2' => 'Tăng trưởng 10% - 20% Doanh thu bán vé', 
@@ -20,7 +20,7 @@ return [
     'why.desc2' => 'Giờ đây không còn doanh nghiệp to thắng doanh nghiệp nhỏ mà là doanh nghiệp nhanh thắng doanh nghiệp chậm. Nếu thiếu tiền thì có thể đi vay, thiếu xe thì có thể đi thuê nhưng thiếu hành khách là thiếu tất cả. Chính vì thế việc ứng dụng công nghệ vào quản lý điều hành giúp doanh nghiệp vận tải tăng doanh thu, tiết kiệm chi phí và nâng cao năng lực cạnh tranh trong thời đại mới. Chúng tôi giúp bạn thực hiện điều đó!',
     'why.register' => 'ĐĂNG KÝ TƯ VẤN',
 
-    'ecosys.header' => 'Hệ sinh thái phong phú của An Vui có gì',
+    'ecosys.header' => 'Hệ sinh thái của An Vui có gì ?',
     'ecosys.title1' => 'Ứng dụng cho đại lý bán vé',
     'ecosys.desc1' => 'Giúp nhà xe chủ động mở rộng các kênh đại lý bán vé online. Có thể phân cấp các mức hoa hồng khác nhau.',
     'ecosys.title2' => 'Website thương hiệu riêng cho nhà xe',
@@ -38,7 +38,7 @@ return [
 
     'customers.header' => 'Khách hàng nói gì về An Vui',
     'customers.halan.name' => 'Ông Nguyễn Mạnh Hà',
-    'customers.halan.pos' => 'Chủ tịch của Công ty Vận tải và du lịch Hà Lan đơn vị vận tải quy mô lớn nhất tại Tại Thái Nguyên',
+    'customers.halan.pos' => 'Chủ tịch của Công ty Vận tải và du lịch Hà Lan',
     'customers.halan.content' => 'Khi ứng dụng AN VUI  vào hoạt động quản lý và vận hành Hoạt động của Hà Lan trở nên minh bạch và thuận tiện. Đặc biệt việc ứng dụng hợp đồng điện tử do AN VUI cung cấp cho mảng xe hợp đồng của Hà lan đã mang lại sự thuận tiện giảm chi phí in ấn, lưu trữ và vận hành đáng kể cho Hà Lan.',
     'customers.hahai.name' => 'Ông Nguyễn Thượng Hải',
     'customers.hahai.pos' => 'Giám đốc Công ty Vận tải Hà Hải Thái Bình',

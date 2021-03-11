@@ -56,16 +56,10 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="UTF-8">
-    <!-- ================= Favicon ================== -->
-    <!-- Standard -->
     <link rel="shortcut icon" href="{{ asset('favicon.png') }}">
-    <!-- Retina iPad Touch Icon-->
     <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('favicon.png') }}">
-    <!-- Retina iPhone Touch Icon-->
     <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('favicon.png') }}">
-    <!-- Standard iPad Touch Icon--> 
     <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('favicon.png') }}">
-    <!-- Standard iPhone Touch Icon--> 
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('favicon.png') }}">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -92,23 +86,13 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
     <link rel="stylesheet" href="{{ asset('css/app.css') }}?v=1.0.4">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}?v={{ time() }}">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    {{-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169847335-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187414431-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'UA-169847335-1');
-    </script> --}}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187414431-1">
-    </script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-187414431-1');
+        gtag('config', 'UA-187414431-1');
     </script>
     <style>
         figure.image.image_resized {
@@ -127,7 +111,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
         }
     </style>
     <script type="application/ld + json">{"@context ":"https://schema.org","@type":"ProfessionalService","name":"Startup Công nghệ với sứ mệnh Số hoá ngành vận tải hành khách thông qua việc cung cấp Phần mềm xe khách | ANVUI.VN","image":{"@type":"ImageObject","url":"https://anvui.vn/imgs/img-home2.png","width":526,"height":474},"telephone":"19001911","url":"https://anvui.vn/","address":{"@type":"PostalAddress","streetAddress":"Toà Ecolife Capital, Số 58 Tố Hữu","addressLocality":"Nam Từ Liêm","postalCode":"700000","addressRegion":"Ha Noi","addressCountry":"VN"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"671"},"priceRange":"Dùng thử miễn phí","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"22:00"}]}</script>
-    @yield("qna")
+    {{-- @yield("qna") --}}
 </head>
 <body>
     <!-- Load Facebook SDK for JavaScript -->
@@ -159,8 +143,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
     </div>
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6MQNZV"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6MQNZV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     @php 
     $routeInfo = Route::getCurrentRoute()->getAction();
@@ -188,10 +171,11 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="avnavbar">
                             <ul class="avnavbar__left">
-                                <li class="avnavbar__logo"><a href="{{ route('home.index') }}" title="{{ $HEADER['metaTitle'] }}">
-                                    {{-- <div class="icon-logo_w"></div>     --}}
-                                    <img src="{{ asset('imgs/logo_b.png') }}" alt="{{ $HEADER['metaTitle'] }}">
-                                </a></li>
+                                <li class="avnavbar__logo">
+                                    <a href="{{ route('home.index') }}" title="{{ $HEADER['metaTitle'] }}">
+                                        <img src="{{ asset('v2/logo.svg') }}" alt="{{ $HEADER['metaTitle'] }}">
+                                    </a>
+                                </li>
                             </ul>
                             <ul class="avnavbar__right">
                                 <li><a href="{{ route('home.index') }}">{{ __('layout.home') }}</a></li>
@@ -248,7 +232,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col--hidden-ipad">
                         <div class="banner__img">
-                            <img src="{{ asset('imgs/img-banner.png') }}" class="img-fluid" title="{{ $HEADER['metaTitle'] }}" alt="{{ $HEADER['metaTitle'] }}">
+                            <img src="{{ asset('v2/home/illu1.svg') }}" class="img-fluid" title="{{ $HEADER['metaTitle'] }}" alt="{{ $HEADER['metaTitle'] }}">
                         </div>    
                     </div>
                 </div>
@@ -308,144 +292,86 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
         <div class="container">
             <div class="footer__top">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  col--12-ipad">
-                        <div class="footer__logo">
-                            <a href="{{ route('home.index') }}" title="{{ $HEADER['metaTitle'] }}">
-                                {!! $logoBlue !!}    
-                            </a>
+                    <div class="col-md-7">
+                        <a href="{{ route('home.index') }}" class="footer__logo">
+                            <img src="{{ asset('v2/logo.svg') }}" title="" alt="">
+                        </a>
+                        <div class="company__addr">
+                            <h3>CÔNG TY CỔ PHẦN CÔNG NGHỆ AN VUI</h3>
+                            <p>Giấy chứng nhận ĐKKD số 0107003437 do Sở KH& ĐT TP. Hà Nội cấp lần đầu ngày 23/09/2015.</p>
                         </div>
-                        <div class="footer__company__intro">
-                            <h3>{{ __('layout.companyName') }}</h3>
-                            <p>{{ __('layout.businessCer') }}</p>
+                        <div class="company__addr">
+                            <h3>An Vui Holdings tại Singapore</h3>
+                            <p>Email: anvuiholding@anvui.vn</p>
+                            <p>Địa chỉ: 20A Tanjong Pagar Road, Singapore</p>
                         </div>
-
-                        <div class="footer__company__address">
-                            <p><span>{{ __('layout.nOfficeLabel') }}</span> - Email: info@anvui.vn - hotline: 1900 1911 Ext 1 </p>
-                            <p>{{ __('layout.address') }}: {{ __('layout.nOfficeContent') }}</p>
+                        <div class="company__addr">
+                            <h3>Chi nhánh phía Nam VIỆT NAM</h3>
+                            <p>Email: anvuihcm@anvui.vn</p>
+                            <p>Địa chỉ: J65 Lầu 6, Toà nhà Sinh Lợi Plaza, KĐT Trung Sơn, Bình Chánh, TP. HCM</p>
                         </div>
-                        
-                        <div class="footer__company__address">
-                            <p><span>{{ __('layout.sOfficeLabel') }}</span> - Email: anvuihcm@anvui.vn - hotline : 1900 1911 Ext 2</p>
-                            <p>{{ __('layout.address') }}: {{ __('layout.sOfficeContent') }}</p>
-                            {{-- <p>Hotline: 038 776 4444</p>  --}}
-                            <p>Hotline: 024.9999.6666</p>
+                        <div class="company__addr">
+                            <h3>Chi nhánh phía Bắc VIỆT NAM</h3>
+                            <p>Email: info@anvui.vn</p>
+                            <p>Địa chỉ: Toà Ecolife Capital, Số 58 Tố Hữu, Nam Từ Liêm, Hà Nội</p>
                         </div>
+                        <p class="footer__hotline">Hotline: (+84)24.9999.6666</p>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  col--12-ipad">
-                        <h3 class="mb-3" style="color: #084388"> {{ __('layout.map') }}</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.977243673456!2d105.78417591542703!3d20.99354929435416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acb433453903%3A0x89bf648fedc58921!2zNTggVOG7kSBI4buvdSwgVHJ1bmcgVsSDbiwgTmFtIFThu6sgTGnDqm0sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1603873894117!5m2!1svi!2s" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        <!-- <div class="footer__menu">
-                            <a href="" title="{{ $HEADER['metaTitle'] }}">Chính sách bảo mật</a>
-                            <a href="" title="{{ $HEADER['metaTitle'] }}">Chính sách hoạt động</a>
-                            <a href="" title="{{ $HEADER['metaTitle'] }}">Điều khoản sử dụng</a>
+                    <div class="col-md-5">
+                        <div class="footer__contact">
+                            <input type="text" placeholder="Email hoặc số điện thoại liên hệ của bạn">
+                            <button>Đăng ký dùng thử</button>
                         </div>
-                        <div class="footer__app">
-                            <span>Tải ứng dụng</span>
-                            <a href="" title="{{ $HEADER['metaTitle'] }}">
-                                {!! $iconAppStore !!}
+                        <div class="footer__social">
+                            <p>Kết nối với AN VUI</p>
+                            <a href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.67 0H1.33C0.978071 0.00261668 0.641298 0.143581 0.39244 0.39244C0.143581 0.641298 0.00261668 0.978071 0 1.33V22.67C0.00261668 23.0219 0.143581 23.3587 0.39244 23.6076C0.641298 23.8564 0.978071 23.9974 1.33 24H12.82V14.72H9.7V11.09H12.82V8.42C12.82 5.32 14.71 3.63 17.49 3.63C18.42 3.63 19.35 3.63 20.28 3.77V7H18.37C16.86 7 16.57 7.72 16.57 8.77V11.08H20.17L19.7 14.71H16.57V24H22.67C23.0219 23.9974 23.3587 23.8564 23.6076 23.6076C23.8564 23.3587 23.9974 23.0219 24 22.67V1.33C23.9974 0.978071 23.8564 0.641298 23.6076 0.39244C23.3587 0.143581 23.0219 0.00261668 22.67 0Z" fill="#646D84"/>
+                                </svg>
                             </a>
-                            <a href="" title="{{ $HEADER['metaTitle'] }}">
-                                {!! $iconGGplay !!}
+                            <a href="">
+                                <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27.41 3.26001C27.2507 2.66805 26.9387 2.12832 26.5052 1.69485C26.0717 1.26137 25.532 0.949349 24.94 0.790012C22.76 0.200012 14 0.200012 14 0.200012C14 0.200012 5.24002 0.200012 3.06002 0.790012C2.46806 0.949349 1.92833 1.26137 1.49485 1.69485C1.06138 2.12832 0.749357 2.66805 0.59002 3.26001C0.182966 5.48328 -0.0145669 7.73984 2.00137e-05 10C-0.0145669 12.2602 0.182966 14.5167 0.59002 16.74C0.749357 17.332 1.06138 17.8717 1.49485 18.3052C1.92833 18.7387 2.46806 19.0507 3.06002 19.21C5.24002 19.8 14 19.8 14 19.8C14 19.8 22.76 19.8 24.94 19.21C25.532 19.0507 26.0717 18.7387 26.5052 18.3052C26.9387 17.8717 27.2507 17.332 27.41 16.74C27.8171 14.5167 28.0146 12.2602 28 10C28.0146 7.73984 27.8171 5.48328 27.41 3.26001ZM11.2 14.2V5.80001L18.47 10L11.2 14.2Z" fill="#646D84"/>
+                                </svg>
                             </a>
-                        </div> -->
+                        </div>
+                        <div class="footer__map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.9526946970786!2d105.78720481493217!3d20.99453328601702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acb6c00f1ded%3A0x50a93bec41002378!2zQ2h1bmcgY8awIEVjb2xpZmUgQ2FwaXRvbCBMw6ogVsSDbiBMxrDGoW5nLCA1OCBU4buRIEjhu691LCBUcnVuZyBWxINuLCBU4burIExpw6ptLCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1615362693968!5m2!1svi!2s" width="100%" height="290" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div class="footer__payment">
+                            <h3>Đối tác</h3>
+                            <div>
+                                <img src="{{ asset('v2/home/pay1.svg') }}" alt="">
+                                <img src="{{ asset('v2/home/pay2.svg') }}" alt="">
+                                <img src="{{ asset('v2/home/pay3.svg') }}" alt="">
+                            </div>
+                        </div>
+                        <div class="footer__payment">
+                            <h3>Cổng thanh toán</h3>
+                            <div>
+                                <img src="{{ asset('v2/home/pay4.svg') }}" alt="">
+                                <img src="{{ asset('v2/home/pay5.svg') }}" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
         <div class="footer__mid">
             <div class="container">
-                <h3 class="partner__head"> {{ __('layout.partners') }}</h3>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col--12-ipad">
-                        <div class="partner">
-                            <a href="https://vnpay.vn/" target="_BLANK" title="{{ $HEADER['metaTitle'] }}" class="d-inline-block">
-                                <img src="https://vnpay.vn/wp-content/uploads/2020/07/Logo-VNPAYQR-update.png" class="img-fluid" alt="{{ $HEADER['metaTitle'] }}">
-                            </a>
-                            <a href="https://zalopay.vn/" target="_BLANK" title="{{ $HEADER['metaTitle'] }}">
-                                <img src="{{ asset('imgs/partner/zalopay.png') }}" class="img-fluid" alt="{{ $HEADER['metaTitle'] }}">
-                            </a>
-                            <a href="https://vinid.net/" target="_BLANK" title="{{ $HEADER['metaTitle'] }}">
-                                <img src="{{ asset('imgs/partner/vinid.png') }}" class="img-fluid" alt="{{ $HEADER['metaTitle'] }}">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col--12-ipad">
-                        <div class="partner partner--right">
-                            <a href="https://www.visa.com.vn/vi_VN" title="{{ $HEADER['metaTitle'] }}"><i class="d-inline-block icon-pn4"></i></a>
-                            <a href="javascript:;" title="{{ $HEADER['metaTitle'] }}"><i class="d-inline-block icon-pn5"></i></a>
-                            <!-- <a href="" title="{{ $HEADER['metaTitle'] }}"><i class="d-inline-block icon-pn6"></i></a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="partner--mobile__wrap">
-                    <div class="partner--mobile">
-                        <a href="https://vnpay.vn/" target="_BLANK" title="{{ $HEADER['metaTitle'] }}">
-                            <img src="https://vnpay.vn/wp-content/uploads/2020/07/Logo-VNPAYQR-update.png" alt="{{ $HEADER['metaTitle'] }}">
-                        </a>
-                        <a href="https://zalopay.vn/" target="_BLANK" title="{{ $HEADER['metaTitle'] }}" class="d-inline-block">
-                            <img src="{{ asset('imgs/partner/zalopay.png') }}" class="img-fluid" alt="{{ $HEADER['metaTitle'] }}">
-                        </a>
-                    </div>
-                    <div class="partner--mobile">
-                        <a href="https://vinid.net/" target="_BLANK" title="{{ $HEADER['metaTitle'] }}">
-                            <img src="{{ asset('imgs/partner/vinid.png') }}" class="img-fluid" alt="{{ $HEADER['metaTitle'] }}">
-                        </a>
-                        <a href="https://www.visa.com.vn/vi_VN" title="{{ $HEADER['metaTitle'] }}"><i class="d-inline-block icon-pn4"></i></a>
-                    </div>
-                    <div class="partner--mobile">
-                        <a href="javascript:;" title="{{ $HEADER['metaTitle'] }}"><i class="d-inline-block icon-pn5"></i></a>
-                        <!-- <a href="" title="{{ $HEADER['metaTitle'] }}"><i class="d-inline-block icon-pn6"></i></a> -->
-                    </div>
-                </div>
+                <ul class="footer__navbar">
+                    <li><a href="">trang chủ</a></li>
+                    <li><a href="">giới thiệu</a></li>
+                    <li><a href="">sản phẩm</a></li>
+                    <li><a href="">tin tức</a></li>
+                    <li><a href="">nhà đầu tư</a></li>
+                </ul>
             </div>
         </div>
-        <div class="footer-bottom">
-            <span>COPYRIGHT BY  <a href="">ANVUI</a> - 2020</span>
+        <div class="footer__bottom">
+            <p>COPYRIGHT BY ANVUI - 2021</p>
         </div>
     </footer>
-
-    <div class="vetetIntro" id="vetetIntro">
-        <button type="button" id="closeVetetIntro" class="vetetIntro_close close">&times;</button>
-        <a href="http://vetet.vn/" class="d-block">
-            <img src="{{ asset('imgs/vetet_intro.png') }}" alt="">
-        </a>
-    </div>
-
-    {{-- <div class="showVetetIntro" id="showVetetIntro" data-placement="right" data-toggle="tooltip" title="Về nhà ăn tết !">
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="Group">
-            <path id="Vector" d="M18.4632 2.07983C18.0884 1.60388 17.5211 1.31274 16.9336 1.15831C15.6749 0.824135 14.2745 1.08236 13.221 1.84439C12.1675 2.60641 11.4862 3.86211 11.4255 5.16084C11.3925 5.86211 11.5318 6.56338 11.504 7.26464C11.4938 7.48743 11.1975 8.05198 10.8962 8.64439C10.6986 8.0216 10.5062 7.38363 10.5416 7.04186C10.5999 6.47224 10.7442 5.91527 10.8708 5.35831C11.1064 4.3254 11.2786 3.19122 10.7974 2.24692C10.3213 1.31274 9.3159 0.781098 8.33837 0.403882C7.51785 0.084895 6.59855 -0.165738 5.77044 0.135528C5.20063 0.343123 4.74986 0.796287 4.42064 1.30515C3.71408 2.39882 3.52667 3.81148 3.9268 5.04692C4.32693 6.28489 5.30954 7.32034 6.52766 7.77857C7.1861 8.02667 7.89519 8.11021 8.55364 8.35578C8.76383 8.43426 9.207 8.88996 9.67804 9.35831C9.02466 9.35578 8.35863 9.33806 8.04461 9.19882C7.52038 8.96844 7.03414 8.65705 6.54537 8.36591C5.63621 7.8216 4.61057 7.30768 3.56213 7.47477C2.52635 7.63679 1.7109 8.4292 1.04992 9.24186C0.492776 9.92287 -0.0314493 10.7203 0.00147285 11.5988C0.0242651 12.2039 0.312964 12.7735 0.695368 13.2419C1.51589 14.2495 2.80239 14.8672 4.10408 14.8697C5.40577 14.8722 6.6948 14.257 7.50772 13.2419C7.94584 12.6925 8.24466 12.0444 8.68278 11.4925C8.82207 11.3178 9.39188 11.0368 9.98447 10.733C9.77934 11.3532 9.55903 11.9811 9.32857 12.2368C8.94617 12.6621 8.50298 13.0292 8.07246 13.4064C7.27473 14.1026 6.46941 14.9203 6.30226 15.9659C6.13765 17.0014 6.63908 18.0216 7.20636 18.9026C7.68246 19.6419 8.28012 20.3862 9.12596 20.6267C9.70843 20.7912 10.339 20.6925 10.9038 20.4748C12.1168 20.0064 13.0994 18.9735 13.5046 17.7381C13.9098 16.5026 13.7224 15.0849 13.0057 13.9988C12.6182 13.4115 12.094 12.9279 11.7066 12.3406C11.5825 12.1533 11.4913 11.5254 11.3875 10.8672C11.9142 11.2545 12.4435 11.657 12.6157 11.9558C12.9044 12.4495 13.1146 12.9862 13.34 13.5127C13.7553 14.4874 14.2846 15.5051 15.2292 15.9862C16.1637 16.4621 17.2881 16.3001 18.3011 16.0343C19.152 15.8089 20.046 15.4722 20.5348 14.7431C20.8716 14.2419 20.9729 13.6089 20.9399 13.0064C20.869 11.7077 20.1903 10.4545 19.1394 9.68743C18.0884 8.92034 16.6829 8.65958 15.4293 9.00641C14.7506 9.19376 14.1276 9.54312 13.4514 9.73046C13.2362 9.79122 12.6081 9.68236 11.9522 9.57857C12.4815 9.19882 13.031 8.81907 13.3679 8.74566C13.9275 8.62414 14.5024 8.59122 15.0722 8.53806C16.1283 8.44439 17.2603 8.25705 18.0099 7.50768C18.7519 6.76591 18.9469 5.64692 19.0026 4.60135C19.0482 3.7254 19.0051 2.7735 18.4632 2.07983Z" fill="#FF7295"/>
-            <path id="Vector_2" d="M12.2206 8.32025C13.2944 7.15316 14.3631 5.76328 14.3631 5.76328C13.3476 6.58354 12.4612 7.53543 11.8104 8.30506C12.5195 7.25949 13.183 6.0848 13.183 6.0848C12.1118 7.2367 11.2963 8.59113 10.9114 9.27721C10.8025 9.22404 10.6834 9.20632 10.5619 9.2367C10.2124 7.8924 9.10823 5.59113 9.10823 5.59113C9.28044 6.38607 9.53622 7.15822 9.78947 7.81392C9.012 6.44176 8.037 5.01392 8.037 5.01392C8.48018 6.17088 9.07531 7.26202 9.58941 8.10506C8.82966 7.1405 7.97622 6.21138 7.97622 6.21138C8.74609 7.59366 9.79201 8.79873 10.3238 9.37088C10.2377 9.45442 10.1845 9.56075 10.1719 9.67721C8.78914 9.5886 6.23641 9.93037 6.23641 9.93037C7.13291 10.0215 8.02687 10.0038 8.78155 9.95316C7.18102 10.2645 5.37537 10.7962 5.37537 10.7962C6.54284 10.7354 7.69005 10.5304 8.622 10.3152C7.5305 10.7253 6.4922 11.1987 6.4922 11.1987C8.03194 10.8975 9.4881 10.2823 10.2023 9.95316C10.2073 9.96328 10.2099 9.97341 10.2149 9.98354C10.2681 10.0848 10.3542 10.1532 10.4479 10.2038C9.93889 11.4949 9.48051 14.0063 9.48051 14.0063C9.87051 13.1228 10.144 12.1987 10.3289 11.4367C10.1111 13.0924 10.0529 15.1202 10.0529 15.1202C10.3567 13.9911 10.5138 12.8367 10.5973 11.8848C10.6505 13.0418 10.7771 14.1582 10.7771 14.1582C10.9645 12.6114 10.8328 11.0468 10.7391 10.2595C10.805 10.2544 10.8683 10.2468 10.9316 10.2164C10.9848 10.1886 11.0203 10.1456 11.0582 10.1025C12.1371 10.9835 14.3581 12.1835 14.3581 12.1835C13.6794 11.5785 12.9373 11.062 12.2941 10.657C13.7832 11.3582 15.6091 12.0089 15.6091 12.0089C14.5708 11.3329 13.4489 10.8013 12.5372 10.4215C13.7047 10.7506 14.9152 10.9962 14.9152 10.9962C13.5046 10.343 11.9851 9.98354 11.2026 9.82911C11.2203 9.72025 11.2153 9.60632 11.1595 9.49999C11.1545 9.48987 11.1469 9.47974 11.1418 9.47214C12.3143 8.71518 14.1276 6.98607 14.1276 6.98607C13.4236 7.39113 12.7677 7.87468 12.2206 8.32025Z" fill="#F34040"/>
-            </g>
-        </svg>    
-    </div> --}}
-
-    <div class="vetetIntroPanel" id="showVetetIntro">
-        <img src="{{ asset('imgs/vetet_pannel.png') }}" alt="">
-        {{-- <div class="vetetIntroPanel__icon">
-            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="Group">
-                <path id="Vector" d="M18.4632 2.07983C18.0884 1.60388 17.5211 1.31274 16.9336 1.15831C15.6749 0.824135 14.2745 1.08236 13.221 1.84439C12.1675 2.60641 11.4862 3.86211 11.4255 5.16084C11.3925 5.86211 11.5318 6.56338 11.504 7.26464C11.4938 7.48743 11.1975 8.05198 10.8962 8.64439C10.6986 8.0216 10.5062 7.38363 10.5416 7.04186C10.5999 6.47224 10.7442 5.91527 10.8708 5.35831C11.1064 4.3254 11.2786 3.19122 10.7974 2.24692C10.3213 1.31274 9.3159 0.781098 8.33837 0.403882C7.51785 0.084895 6.59855 -0.165738 5.77044 0.135528C5.20063 0.343123 4.74986 0.796287 4.42064 1.30515C3.71408 2.39882 3.52667 3.81148 3.9268 5.04692C4.32693 6.28489 5.30954 7.32034 6.52766 7.77857C7.1861 8.02667 7.89519 8.11021 8.55364 8.35578C8.76383 8.43426 9.207 8.88996 9.67804 9.35831C9.02466 9.35578 8.35863 9.33806 8.04461 9.19882C7.52038 8.96844 7.03414 8.65705 6.54537 8.36591C5.63621 7.8216 4.61057 7.30768 3.56213 7.47477C2.52635 7.63679 1.7109 8.4292 1.04992 9.24186C0.492776 9.92287 -0.0314493 10.7203 0.00147285 11.5988C0.0242651 12.2039 0.312964 12.7735 0.695368 13.2419C1.51589 14.2495 2.80239 14.8672 4.10408 14.8697C5.40577 14.8722 6.6948 14.257 7.50772 13.2419C7.94584 12.6925 8.24466 12.0444 8.68278 11.4925C8.82207 11.3178 9.39188 11.0368 9.98447 10.733C9.77934 11.3532 9.55903 11.9811 9.32857 12.2368C8.94617 12.6621 8.50298 13.0292 8.07246 13.4064C7.27473 14.1026 6.46941 14.9203 6.30226 15.9659C6.13765 17.0014 6.63908 18.0216 7.20636 18.9026C7.68246 19.6419 8.28012 20.3862 9.12596 20.6267C9.70843 20.7912 10.339 20.6925 10.9038 20.4748C12.1168 20.0064 13.0994 18.9735 13.5046 17.7381C13.9098 16.5026 13.7224 15.0849 13.0057 13.9988C12.6182 13.4115 12.094 12.9279 11.7066 12.3406C11.5825 12.1533 11.4913 11.5254 11.3875 10.8672C11.9142 11.2545 12.4435 11.657 12.6157 11.9558C12.9044 12.4495 13.1146 12.9862 13.34 13.5127C13.7553 14.4874 14.2846 15.5051 15.2292 15.9862C16.1637 16.4621 17.2881 16.3001 18.3011 16.0343C19.152 15.8089 20.046 15.4722 20.5348 14.7431C20.8716 14.2419 20.9729 13.6089 20.9399 13.0064C20.869 11.7077 20.1903 10.4545 19.1394 9.68743C18.0884 8.92034 16.6829 8.65958 15.4293 9.00641C14.7506 9.19376 14.1276 9.54312 13.4514 9.73046C13.2362 9.79122 12.6081 9.68236 11.9522 9.57857C12.4815 9.19882 13.031 8.81907 13.3679 8.74566C13.9275 8.62414 14.5024 8.59122 15.0722 8.53806C16.1283 8.44439 17.2603 8.25705 18.0099 7.50768C18.7519 6.76591 18.9469 5.64692 19.0026 4.60135C19.0482 3.7254 19.0051 2.7735 18.4632 2.07983Z" fill="#FF7295"/>
-                <path id="Vector_2" d="M12.2206 8.32025C13.2944 7.15316 14.3631 5.76328 14.3631 5.76328C13.3476 6.58354 12.4612 7.53543 11.8104 8.30506C12.5195 7.25949 13.183 6.0848 13.183 6.0848C12.1118 7.2367 11.2963 8.59113 10.9114 9.27721C10.8025 9.22404 10.6834 9.20632 10.5619 9.2367C10.2124 7.8924 9.10823 5.59113 9.10823 5.59113C9.28044 6.38607 9.53622 7.15822 9.78947 7.81392C9.012 6.44176 8.037 5.01392 8.037 5.01392C8.48018 6.17088 9.07531 7.26202 9.58941 8.10506C8.82966 7.1405 7.97622 6.21138 7.97622 6.21138C8.74609 7.59366 9.79201 8.79873 10.3238 9.37088C10.2377 9.45442 10.1845 9.56075 10.1719 9.67721C8.78914 9.5886 6.23641 9.93037 6.23641 9.93037C7.13291 10.0215 8.02687 10.0038 8.78155 9.95316C7.18102 10.2645 5.37537 10.7962 5.37537 10.7962C6.54284 10.7354 7.69005 10.5304 8.622 10.3152C7.5305 10.7253 6.4922 11.1987 6.4922 11.1987C8.03194 10.8975 9.4881 10.2823 10.2023 9.95316C10.2073 9.96328 10.2099 9.97341 10.2149 9.98354C10.2681 10.0848 10.3542 10.1532 10.4479 10.2038C9.93889 11.4949 9.48051 14.0063 9.48051 14.0063C9.87051 13.1228 10.144 12.1987 10.3289 11.4367C10.1111 13.0924 10.0529 15.1202 10.0529 15.1202C10.3567 13.9911 10.5138 12.8367 10.5973 11.8848C10.6505 13.0418 10.7771 14.1582 10.7771 14.1582C10.9645 12.6114 10.8328 11.0468 10.7391 10.2595C10.805 10.2544 10.8683 10.2468 10.9316 10.2164C10.9848 10.1886 11.0203 10.1456 11.0582 10.1025C12.1371 10.9835 14.3581 12.1835 14.3581 12.1835C13.6794 11.5785 12.9373 11.062 12.2941 10.657C13.7832 11.3582 15.6091 12.0089 15.6091 12.0089C14.5708 11.3329 13.4489 10.8013 12.5372 10.4215C13.7047 10.7506 14.9152 10.9962 14.9152 10.9962C13.5046 10.343 11.9851 9.98354 11.2026 9.82911C11.2203 9.72025 11.2153 9.60632 11.1595 9.49999C11.1545 9.48987 11.1469 9.47974 11.1418 9.47214C12.3143 8.71518 14.1276 6.98607 14.1276 6.98607C13.4236 7.39113 12.7677 7.87468 12.2206 8.32025Z" fill="#F34040"/>
-                </g>
-            </svg>    
-        </div>
-        <h3>Về nhà ăn tết !</h3> --}}
-    </div>
-
-    <div class="vetetIntroPanel__mobile" id="showVetetIntro--mobile">
-        <img src="{{ asset('imgs/vetet_pannel.png') }}" alt="">
-    </div>
-
-    <div class="modal modal--vetetIntro" id="modal--vetetIntro">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <a href="http://vetet.vn/" class="d-block text-center">
-                    <img src="{{ asset('imgs/vetet_intro.png') }}" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
 
     <div class="modal modal--register" id="modal--register">
         <div class="modal-dialog">
@@ -679,7 +605,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                     dots:true,
                 },
                 1000:{
-                    items:4,
+                    items:6,
                     dots:true,
                 }
             }
