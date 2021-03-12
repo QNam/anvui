@@ -43,33 +43,6 @@
                 <p>{{ __('about.para3') }}</p>
             </div>
         </div>
-        <div class="row" style="margin-top: 40px">
-            <div class="col-12">
-                <div class="custommerReview">
-                    <h2>{{ __('about.reviewLabel') }} <b>?</b></h2>
-                    <div id="js_custommerReview" class="custommerReview__carousel owl-carousel owl-theme">
-                        <div class="item custommerReview__item">
-                            <img src="{{ asset('imgs/review2.png') }}" alt="">
-                            <h3>{{ __('home.customers.halan.name') }}</h3>
-                            <h4>{{ __('home.customers.halan.pos') }}</h4>
-                            <h5><i> "{{ __('home.customers.halan.content') }}"</i></h5>
-                        </div>
-                        <div class="item custommerReview__item">
-                            <img src="{{ asset('imgs/review1.png') }}" alt="">
-                            <h3>{{ __('home.customers.inter.name') }}</h3>
-                            <h4>{{ __('home.customers.inter.pos') }}</h4>
-                            <h5><i> "{{ __('home.customers.inter.content') }}"</i></h5>
-                        </div>
-                        <div class="item custommerReview__item">
-                            <img src="{{ asset('imgs/review3.png') }}" alt="">
-                            <h3>{{ __('home.customers.hahai.name') }}</h3>
-                            <h4>{{ __('home.customers.hahai.pos') }}</h4>
-                            <h5><i> "{{ __('home.customers.hahai.content') }}"</i></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="row" style="margin-top: 40px">
             <div class="col-12">

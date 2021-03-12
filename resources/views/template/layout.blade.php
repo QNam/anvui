@@ -111,7 +111,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
         }
     </style>
     <script type="application/ld + json">{"@context ":"https://schema.org","@type":"ProfessionalService","name":"Startup Công nghệ với sứ mệnh Số hoá ngành vận tải hành khách thông qua việc cung cấp Phần mềm xe khách | ANVUI.VN","image":{"@type":"ImageObject","url":"https://anvui.vn/imgs/img-home2.png","width":526,"height":474},"telephone":"19001911","url":"https://anvui.vn/","address":{"@type":"PostalAddress","streetAddress":"Toà Ecolife Capital, Số 58 Tố Hữu","addressLocality":"Nam Từ Liêm","postalCode":"700000","addressRegion":"Ha Noi","addressCountry":"VN"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"671"},"priceRange":"Dùng thử miễn phí","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"22:00"}]}</script>
-    {{-- @yield("qna") --}}
+    @yield("qna")
 </head>
 <body>
     <!-- Load Facebook SDK for JavaScript -->
@@ -183,7 +183,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                                 <li><a href="{{ route('page.software') }}">{{ __('layout.productNews') }}</a></li>
                                 <li><a href="{{ route('news.index') }}">{{ __('layout.news') }}</a></li>
                                 <li><a href="{{ route('recruit.index') }}">{{ __('layout.recruitment') }}</a></li>
-                                <li class="language">
+                                {{-- <li class="language">
                                     @if( str_replace('_', '-', app()->getLocale()) == 'vi' )
                                     <a href="javascript:;"> <p><span class="avicon icon-vn"></span> Tiếng việt</p> </a>
                                     @else
@@ -193,7 +193,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                                         <li><a href="{{ route('lang','en') }}" title="{{ $HEADER['metaTitle'] }}"><span class="avicon icon-us"></span> English</a></li>
                                         <li><a href="{{ route('lang','vi') }}" title="{{ $HEADER['metaTitle'] }}"><span class="avicon icon-vn"></span> Tiếng Việt</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>
@@ -207,7 +207,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                         <li>
                             <a href="{{ route('home.index') }}" title="{{ $HEADER['metaTitle'] }}" class="avnavbar--mobile__logo">                                    
                                 {{-- <div class="icon-logo_w"></div>     --}}
-                                <img src="{{ asset('imgs/logo_b.png') }}" alt="{{ $HEADER['metaTitle'] }}">
+                                <img src="{{ asset('v2/logo.svg') }}" alt="{{ $HEADER['metaTitle'] }}">
                             </a>
                         </li>
                     </ul>
@@ -248,7 +248,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                         <div class="navbar--white__wrap">
                             <div class="navbar--white__left">
                                 <a href="{{ route('home.index') }}" title="{{ $HEADER['metaTitle'] }}" class="navbar--white__logo">
-                                    <img src="{{ asset('imgs/logo_bo.png') }}" title="{{ $HEADER['metaTitle'] }}" alt="{{ $HEADER['metaTitle'] }}">
+                                    <img src="{{ asset('v2/logo.svg') }}" title="{{ $HEADER['metaTitle'] }}" alt="{{ $HEADER['metaTitle'] }}">
                                 </a>
                             </div>
                             <div class="navbar--white__right">
@@ -258,7 +258,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                                     <li><a href="{{ route('page.software') }}" title="{{ $HEADER['metaTitle'] }}">{{ __('layout.productNews') }}</a></li>
                                     <li><a href="{{ route('news.index') }}" title="{{ $HEADER['metaTitle'] }}">{{ __('layout.news') }}</a></li>
                                     <li><a href="{{ route('recruit.index') }}" title="{{ $HEADER['metaTitle'] }}">{{ __('layout.recruitment') }}</a></li>
-                                    <li><a class="btn--reg" data-toggle="modal" data-target="#modal--register">{{ __('layout.register') }}</a></li>
+                                    {{-- <li><a class="btn--reg" data-toggle="modal" data-target="#modal--register">{{ __('layout.register') }}</a></li> --}}
                                 </ul>
                             </div>
                         </div> 
@@ -341,9 +341,9 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                         <div class="footer__payment">
                             <h3>Đối tác</h3>
                             <div>
-                                <img src="{{ asset('v2/home/pay1.svg') }}" alt="">
-                                <img src="{{ asset('v2/home/pay2.svg') }}" alt="">
-                                <img src="{{ asset('v2/home/pay3.svg') }}" alt="">
+                                <img class="mb-4" src="{{ asset('v2/home/pay1.svg') }}" alt="">
+                                <img class="mb-4" src="{{ asset('v2/home/pay2.svg') }}" alt="">
+                                <img class="mb-4" src="{{ asset('v2/home/pay3.svg') }}" alt="">
                             </div>
                         </div>
                         <div class="footer__payment">
@@ -357,7 +357,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                 </div>
             </div>
         </div>
-        <div class="footer__mid">
+        <div class="footer__mid d-none d-md-block">
             <div class="container">
                 <ul class="footer__navbar">
                     <li><a href="">trang chủ</a></li>
@@ -376,29 +376,12 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
     <div class="modal modal--register" id="modal--register">
         <div class="modal-dialog">
             <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 1.75L18.25 0L10 8.25L1.75 0L0 1.75L8.25 10L0 18.25L1.75 20L10 11.75L18.25 20L20 18.25L11.75 10L20 1.75Z" fill="white"/>
+                    </svg>
+                </button>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                        <div class="modal--register__img">
-                            <img src="{{ asset('imgs/img-reg.png') }}" title="{{ $HEADER['metaTitle'] }}" alt="{{ $HEADER['metaTitle'] }}">
-                            @if( str_replace('_', '-', app()->getLocale()) == 'vi' )
-                            <div class="modal--register__content">
-                                <p>Nền tảng quản lý</p>
-                                <h1>Tối ưu</h1>
-                                <p>Và</p>
-                                <h1>Thuận tiện</h1>
-                                <p>cho mọi nhà xe</p>
-                            </div>
-                            @else 
-                            <div class="modal--register__content">
-                                <h1 style="font-size: 30px;">THE ULTIMATE</h1>
-                                <p>AND</p>
-                                <h1 style="font-size: 30px;">CONVENIENT</h1>
-                                <p style="font-size: 18px;">MANAGEMENT FOUNDATION</p>
-                                <p style="font-size: 18px;">FOR ALL BUS OPERATORS</p>
-                            </div>
-                            @endif
-                        </div>
-                    </div>
                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
                         <div class="modal--register__form">
                             <form action="{{ route('register_use.store') }}" method="POST" id="js-form--register">
@@ -407,51 +390,45 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                                     {{ __('layout.register') }}
                                 </h3>
                                 <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                            <label for="">{{ __('layout.reg.fullName') }} </label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                                            <input type="text" name="user_name" required class="form-control">
-                                        </div>
+                                    <div class="form-group__wrap d-flex align-items-end">
+                                        <label for="" class="form-group__label">{{ __('layout.reg.fullName') }} </label>
+                                        <input type="text" name="user_name" required class="form-control">
+                                    </div>
+                                    <div class="d-flex">
+                                        <label for="" class="form-group__label invisible mr-0">{{ __('layout.reg.fullName') }} </label>
+                                        <label class="error mt-3" for="user_name"></label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-group__wrap d-flex align-items-end">
+                                        <label for="" class="form-group__label">{{ __('layout.reg.company') }} </label>
+                                        <input type="text" name="company_name" required class="form-control">
+                                    </div>
+                                    <div class="d-flex">
+                                        <label for="" class="form-group__label invisible mr-0">{{ __('layout.reg.company') }} </label>
+                                        <label class="error mt-3" for="company_name"></label>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                            <label for="">{{ __('layout.reg.company') }} </label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                                            <input type="text" name="company_name" required class="form-control">
-                                        </div>
+                                    <div class="form-group__wrap d-flex align-items-end">
+                                        <label for="" class="form-group__label">{{ __('layout.reg.phone') }} </label>
+                                        <input type="number" name="phone" required class="form-control">
+                                    </div>
+                                    <div class="d-flex">
+                                        <label for="" class="form-group__label invisible mr-0">{{ __('layout.reg.phone') }} </label>
+                                        <label class="error mt-3" for="phone"></label>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                            <label for="">{{ __('layout.reg.phone') }} </label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                                            <input type="number" name="phone" required class="form-control">
-                                        </div>
+                                    <div class="form-group__wrap d-flex align-items-end">
+                                        <label for="" class="form-group__label">{{ __('layout.reg.address') }} </label>
+                                        <input type="text" name="address" class="form-control">
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                            <label for="">{{ __('layout.reg.address') }} </label>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                                            <input type="text" name="address" class="form-control">
-                                        </div>
+                                    <div>
+                                        <label for="" class="form-group__label invisible mr-0">{{ __('layout.reg.address') }} </label>
+                                        <label class="error mt-3" for="address"></label>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
-                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-
-                                        </div>
                                 </div>
                                 {{-- <div class="form-group">
                                     <div class="row">
@@ -466,13 +443,8 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
                                             </div>
                                         </div>
                                 </div> --}}
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"></div>
-                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-                                            <button class="btn--reg" type="submit">{{ __('layout.reg.regLabel') }} </button>
-                                        </div>
-                                    </div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <button class="btn--reg" type="submit">{{ __('layout.reg.regLabel') }} </button>
                                 </div>
                             </form>
                         </div>
@@ -641,7 +613,7 @@ $iconGGplay = '<svg width="143" height="48" viewBox="0 0 143 48" fill="none" xml
         $('#js_custommerReview').owlCarousel({
             loop:true,
             responsiveClass:true,
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout:3000,
             autoplayHoverPause: true,
             navText: ['<i class="fa fa-arrow-left" aria-hidden="true"></i>','<i class="fa fa-arrow-right" aria-hidden="true"></i>'],

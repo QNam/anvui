@@ -56,15 +56,15 @@
                 <div class="whyneed__content">
                     <h2>{{ __('home.benefit.header1') }} {{ __('home.benefit.header2') }} {{ __('home.benefit.header3') }}</h2>
                     <div class="whyneed__param wow slideInRight" data-wow-duration=".3s">
-                        <h3><img src="{{ asset('v2/dot.svg') }}" alt=""> {{ __('home.benefit.title1') }}</h3>
+                        <h3><img src="{{ asset('v2/dot.svg') }}" style="margin-right: 12px" alt=""> {{ __('home.benefit.title1') }}</h3>
                         <p>{{ __('home.benefit.desc1') }}</p>
                     </div>
                     <div class="whyneed__param wow slideInRight" data-wow-duration=".3s">
-                        <h3><img src="{{ asset('v2/dot.svg') }}" alt=""> {{ __('home.benefit.title2') }}</h3>
+                        <h3><img src="{{ asset('v2/dot.svg') }}" style="margin-right: 12px" alt=""> {{ __('home.benefit.title2') }}</h3>
                         <p>{{ __('home.benefit.desc2') }}</p>
                     </div>
                     <div class="whyneed__param wow slideInRight" data-wow-duration=".3s">
-                        <h3><img src="{{ asset('v2/dot.svg') }}" alt=""> {{ __('home.benefit.title3') }}</h3>
+                        <h3><img src="{{ asset('v2/dot.svg') }}" style="margin-right: 12px" alt=""> {{ __('home.benefit.title3') }}</h3>
                         <p>{{ __('home.benefit.desc3') }}</p>
                     </div>
                 </div>   
@@ -87,8 +87,8 @@
                                 <p class="text-right">{{ __('home.ecosys.desc1') }}</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <img src="{{ asset('v2/home/eco1.svg') }}" alt="">
+                        <div class="col-md-4 d-none d-md-block">
+                            <img src="{{ asset('v2/home/eco1.svg') }}" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -100,12 +100,12 @@
                                 <p class="text-right">{{ __('home.ecosys.desc2') }}</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <img src="{{ asset('v2/home/eco2.svg') }}" alt="">
+                        <div class="col-md-4 d-none d-md-block">
+                            <img src="{{ asset('v2/home/eco2.svg') }}" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="avecosystem__param mb-0">
+                <div class="avecosystem__param">
                     <div class="row">
                         <div class="col-md-8">
                             <div class="wow slideInLeft" data-wow-duration=".3s">
@@ -113,8 +113,8 @@
                                 <p class="text-right">{{ __('home.ecosys.desc3') }}</p>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <img src="{{ asset('v2/home/eco3.svg') }}" alt="">
+                        <div class="col-md-4 d-none d-md-block">
+                            <img src="{{ asset('v2/home/eco3.svg') }}" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -122,8 +122,8 @@
             <div class="col-md-6">
                 <div class="avecosystem__param">
                     <div class="row">
-                        <div class="col-md-4 text-right">
-                            <img src="{{ asset('v2/home/eco4.svg') }}" alt="">
+                        <div class="col-md-4 text-right d-none d-md-block">
+                            <img src="{{ asset('v2/home/eco4.svg') }}" class="img-fluid" alt="">
                         </div>
                         <div class="col-md-8">
                             <div class="wow slideInRight" data-wow-duration=".3s">
@@ -135,8 +135,8 @@
                 </div>
                 <div class="avecosystem__param">
                     <div class="row">
-                        <div class="col-md-4 text-right">
-                            <img src="{{ asset('v2/home/eco5.svg') }}" alt="">
+                        <div class="col-md-4 text-right d-none d-md-block">
+                            <img src="{{ asset('v2/home/eco5.svg') }}" class="img-fluid" alt="">
                         </div>
                         <div class="col-md-8">
                             <div class="wow slideInRight" data-wow-duration=".3s">
@@ -146,10 +146,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="avecosystem__param mb-0">
+                <div class="avecosystem__param">
                     <div class="row">
-                        <div class="col-md-4 text-right">
-                            <img src="{{ asset('v2/home/eco6.svg') }}" alt="">
+                        <div class="col-md-4 text-right d-none d-md-block">
+                            <img src="{{ asset('v2/home/eco6.svg') }}" class="img-fluid" alt="">
                         </div>
                         <div class="col-md-8">
                             <div class="wow slideInRight" data-wow-duration=".3s">
@@ -169,8 +169,8 @@
     <h2>{{ __('home.customers.header') }}</h2>
     <div class="container">
         <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
+            <div class="col-md-1 col--hidden-ipad"></div>
+            <div class="col-md-10 col--12-ipad">
                 <div id="js_custommerReview" class="custommerReview__carousel owl-carousel owl-theme">
                     <div class="item custommerReview__item">
                         <div class="row">
@@ -179,7 +179,7 @@
                                 <p>{{ __('home.customers.halan.name') }}</p>
                                 <span>{{ __('home.customers.halan.pos') }}</span>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 d-none d-md-block">
                                 <img src="{{ asset('v2/home/cust1.svg') }}" title="{{ $HEADER['metaTitle'] }}" alt="{{ $HEADER['metaTitle'] }}">
                             </div>
                         </div>
@@ -191,7 +191,7 @@
                                 <p>{{ __('home.customers.inter.name') }}</p>
                                 <span>{{ __('home.customers.inter.pos') }}</span>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 d-none d-md-block">
                                 <img src="{{ asset('v2/home/cust2.svg') }}" title="{{ $HEADER['metaTitle'] }}" alt="{{ $HEADER['metaTitle'] }}">
                             </div>
                         </div>
@@ -203,14 +203,14 @@
                                 <p>{{ __('home.customers.hahai.name') }}</p>
                                 <span>{{ __('home.customers.hahai.pos') }}</span>
                             </div>
-                            <div class="col-md-4">
-                                <img src="{{ asset('v2/home/cust3.svg') }}" title="{{ $HEADER['metaTitle'] }}" alt="{{ $HEADER['metaTitle'] }}">
+                            <div class="col-md-4 d-none d-md-block">
+                                <img src="{{ asset('imgs/review3.png') }}" title="{{ $HEADER['metaTitle'] }}" alt="{{ $HEADER['metaTitle'] }}">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-1"></div>
+            <div class="col-md-1 col--hidden-ipad"></div>
         </div>
     </div>
     <div id="js_custommerReview" class="custommerReview__carousel owl-carousel owl-theme">

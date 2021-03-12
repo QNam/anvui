@@ -15,10 +15,10 @@ return [
     'sOfficeContent' => 'J65 Lầu 6, Toà nhà Sinh Lợi Plaza, KĐT Trung Sơn, Bình Chánh, Hồ Chí Minh',
     'partners' => 'Đối tác',
     'address' => 'Địa chỉ',
-    'register' => 'ĐĂNG KÝ TƯ VẤN',
+    'register' => 'Đăng ký hợp tác',
     'map' => 'Bản đồ',
 
-    'reg.fullName' => 'Họ tên người liên hệ',
+    'reg.fullName' => 'Người liên hệ',
     'reg.phone' => 'Số điện thoại',
     'reg.address' => 'Địa chỉ',
     'reg.company' => 'Tên nhà xe',
